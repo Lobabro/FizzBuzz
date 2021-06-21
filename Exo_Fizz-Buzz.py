@@ -4,18 +4,19 @@
 # Si le nombre est divisible par 3 et par 5 : on écrit Fizzbuzz
 # Sinon on écrit le nombre
 
-nombre = int(input("Saisissez un nombre : "))
-mod3 = nombre % 3
-mod5 = nombre % 5
+nombre = 0 #int(input("Saisissez un nombre : "))
 
-if mod3==0 and mod5==0 :
-    print("Fizzbuzz")
+for nombre in range(101):
+    mod3 = nombre % 3
+    mod5 = nombre % 5
+    if mod3==0 and mod5==0 :
+        print("Fizzbuzz")
     
-elif mod3 ==0 :
-    print("Fizz")
+    elif mod3 ==0 :
+        print("Fizz")
     
-elif mod5 ==0 :
-    print("Buzz")
+    elif mod5 ==0 :
+        print("Buzz")
 
-else:
-    print(nombre)
+    else:
+        print(nombre)
