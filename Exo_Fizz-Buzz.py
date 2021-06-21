@@ -8,17 +8,17 @@ def fizzbuzz(nombre):
     mod3 = nombre % 3
     mod5 = nombre % 5
     if mod3==0 and mod5==0 :
-        print("Fizzbuzz")
+        res="Fizzbuzz"
     elif mod3 ==0 :
-        print("Fizz")
+        res="Fizz"
     elif mod5 ==0 :
-        print("Buzz")
+        res="Buzz"
     else:
-        print(nombre)
+        res=nombre
 
-    return("Fizzbuzz", "Fizz", "Buzz", nombre)
-
-nombre = 0 #int(input("Saisissez un nombre : "))
+    return res
 
 for nombre in range(101):
-    fizzbuzz(nombre)
+    print(
+        fizzbuzz(nombre)
+    )
