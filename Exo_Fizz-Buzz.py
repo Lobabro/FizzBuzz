@@ -1,35 +1,25 @@
-# Test de Fizz-Buzz
-# Si le nombre est divisible par 3 : on écrit Fizz
-# Si le nombre est divisible par 5 : on écrit Buzz
-# Si le nombre est divisible par 7 : on écrit Kizz
-# Si le nombre est divisible par 3 et par 5 : on écrit FizzBuzz
-# Si le nombre est divisible par 3 et par 7 : on écrit FizzKizz
-# Si le nombre est divisible par 5 et par 7 : on écrit BuzzKizz
-# Si le nombre est divisible par 3 et 5 et par 7 : on écrit FizzBuzzKizz
-# Sinon on écrit le nombre
-
-def Fizz(nombre):
-    mod3 = nombre % 3
+def Fizz(nombre):       
+    mod3 = nombre % 3 # Si le nombre est un multiple 3.
     if mod3==0:
-        res="Fizz"
+        res="Fizz"    # La fonction retourne "Fizz".
     else:
-        res=""
-    return res
+        res=""        # Sinon la fonction retourne le nombre tel quel.
+    return res 
 
 def Buzz(nombre):
-    mod5 = nombre % 5
+    mod5 = nombre % 5 # Si le nombre est un multiple 5.
     if mod5==0:
-        res="Buzz"
+        res="Buzz"    # La fonction retourne "Buzz".
     else:
-        res=""
+        res=""        # Sinon la fonction retourne le nombre tel quel.
     return res
 
 def Kizz(nombre):
-    mod7 = nombre % 7
+    mod7 = nombre % 7 # Si le nombre est un multiple 7.
     if mod7==0:
-        res="Kizz"
+        res="Kizz"    # La fonction retourne "Kizz".
     else:
-        res=""
+        res=""        # Sinon la fonction retourne le nombre tel quel.
     return res
 
 i=0
@@ -42,4 +32,3 @@ for nombre in range(101):
 
     else:
         print(i)
-    i = i+1
